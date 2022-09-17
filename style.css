@@ -1,0 +1,32 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+.title_underbar{
+  text-align: center;
+  border-bottom: solid 1px red;
+  color: red;
+  font-size: larger;
+}
+
+u{
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+}
+
+.sozai{
+  font-size: larger;
+  font-weight: bold;
+}
+
+.box1 {
+  margin: 2em auto;  
+  padding: 1em;
+  width: 90%;
+  color: #666666; 
+  background-color: #f7f7f7; 
+  border: 2px solid #ccc; 
+  border-radius: 8px;  
+ }
