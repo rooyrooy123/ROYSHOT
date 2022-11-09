@@ -30,3 +30,14 @@ u{
   border: 2px solid #ccc; 
   border-radius: 8px;  
  }
+
+.subtitle {
+  font-size: larger;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.sozai_hideshow{
+  overflow: scroll;
+  height: 400px;
+}
