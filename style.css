@@ -6,16 +6,21 @@
 .title_underbar{
   text-align: center;
   border-bottom: solid 1px red;
+  border-top: solid 1px red;
   color: red;
   font-size: larger;
 }
 
-u{
-  font-size: x-large;
+u.u_title{
+  font-size:x-large;
   font-weight: bold;
   color: black;
 }
-
+u.u_title_2{
+  font-size: large;
+  font-weight:bold;
+  color: #000000
+}
 .sozai{
   font-size: larger;
   font-weight: bold;
@@ -40,4 +45,5 @@ u{
 .sozai_hideshow{
   overflow: scroll;
   height: 400px;
+
 }
