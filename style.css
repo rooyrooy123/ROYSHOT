@@ -1,3 +1,21 @@
+
+/*ここからメインcss*/
+
+.title{
+  text-align: center;
+  padding-top:1vh;
+  overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
 *{
   margin: 0%;
   padding: 0%;
@@ -9,6 +27,10 @@
   border-top: solid 1px red;
   color: red;
   font-size: larger;
+}
+
+.underbar{
+  border-bottom: solid 1px black;
 }
 
 u.u_title{
@@ -30,10 +52,9 @@ u.u_title_2{
   margin: 2em auto;  
   padding: 1em;
   width: 90%;
-  color: #666666; 
-  background-color: #f7f7f7; 
   border: 2px solid #ccc; 
   border-radius: 8px;  
+  position:fix;
  }
 
 .subtitle {
@@ -45,5 +66,161 @@ u.u_title_2{
 .sozai_hideshow{
   overflow: scroll;
   height: 400px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ここからのコードは背景*/
+*{
+  margin:0%;
+  padding:0%;
 
 }
+
+body{
+  overflow-x:hidden;
+
+
+}
+
+.body2{
+  width:100%;
+  max-width: 100%;
+  height: 100%;
+  max-height:100vw;
+  position: relative;
+  z-index: 1;
+
+  overflow-x:hidden;
+  margin:1vh;
+
+}
+
+
+.back{
+  z-index: 0;
+}
+.blob{
+  position: absolute;
+  filter: blur(13px);
+  -webkit-filter: blur(13px);
+  
+
+}
+
+.body2{
+  /*要素の高さを指定*/
+  padding:0%;
+  margin:0%;
+  height: 100%;
+  /*上下方向にはみ出した要素ををスクロールさせる*/
+  overflow-y: scroll;
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+/*スクロールバー非表示（Chrome・Safari）*/
+.body2::-webkit-scrollbar{
+  display:none;
+}
+
+.body2{
+  list-style: none;
+}
+.back li {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+/*模様のデザインhtmlの模様の数増やしたらここのnの数字を変更*/
+
+.back li:nth-child(-n+2){ 
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CradialGradient id=%22radialGradientId%22 r=%22100%25%22 cx=%2240%25%22 cy=%2281%25%22 %3E %3Cstop offset=%220%25%22 stop-color=%22%23FFDEE9%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%23B5FFFC%22 %2F%3E %3C%2FradialGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23radialGradientId)%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+
+}
+
+
+.back li:nth-child(n+3):nth-child(-n+5){ 
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CradialGradient id=%22radialGradientId%22 r=%22100%25%22 cx=%2240%25%22 cy=%2281%25%22 %3E %3Cstop offset=%220%25%22 stop-color=%22%23A9C9FF%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%23FFBBEC%22 %2F%3E %3C%2FradialGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23radialGradientId)%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+}
+.back li:nth-child(n+6):nth-child(-n+8){ 
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CradialGradient id=%22radialGradientId%22 r=%22100%25%22 cx=%2240%25%22 cy=%2281%25%22 %3E %3Cstop offset=%220%25%22 stop-color=%22%2385FFBD%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%23FFFB7D%22 %2F%3E %3C%2FradialGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23radialGradientId)%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+}
+.back li:nth-child(n+9):nth-child(-n+11){ 
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CradialGradient id=%22radialGradientId%22 r=%22100%25%22 cx=%2240%25%22 cy=%2281%25%22 %3E %3Cstop offset=%220%25%22 stop-color=%22%23FBDA61%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%23FF5ACD%22 %2F%3E %3C%2FradialGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23radialGradientId)%22 d=%22M952.5%2C647Q905%2C794%2C780%2C885Q655%2C976%2C500%2C976Q345%2C976%2C220%2C885Q95%2C794%2C47.5%2C647Q0%2C500%2C47.5%2C353Q95%2C206%2C220%2C115Q345%2C24%2C500%2C24Q655%2C24%2C780%2C115Q905%2C206%2C952.5%2C353Q1000%2C500%2C952.5%2C647Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+}
+
+.back li:nth-child(n+12):nth-child(-n+12){
+  width:80px;
+  height:80px;
+  background-color: rgba(153, 50, 204, 0.368);
+ 
+}
+.back li:nth-child(n+13):nth-child(-n+13){
+  width:85px;
+  height:85px;
+  background-color: rgba(17, 211, 255, 0.379);
+ 
+}
+.back li:nth-child(n+14):nth-child(-n+14){
+  width:90px;
+  height:90px;
+  background-color: rgba(255, 86, 145, 0.368);
+ 
+}
+
+
+.back{
+  animation-name: back;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.back li{
+  animation: rotate 20s linear infinite;
+  -webkit-animation: rotate 20s linear infinite;
+}
+
+/*アニメーション*/
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0dreg);
+    -moz-transform: rotate(0dreg);
+    -ms-transform: rotate(0dreg);
+    -o-transform: rotate(0dreg);
+}100%{
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+}
+@keyframes back{
+    0%{
+      opacity: 0;
+
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+
+/*ここまでが背景のcss*/
