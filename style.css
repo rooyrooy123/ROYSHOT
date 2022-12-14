@@ -113,8 +113,8 @@ body{
 }
 .blob{
   position: absolute;
-  filter: blur(13px);
-  -webkit-filter: blur(13px);
+  filter: blur(11px);
+  -webkit-filter: blur(11px);
   
 
 }
