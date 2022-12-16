@@ -74,7 +74,8 @@ async function back(){
       for (let i = 0; i < backelement.length; i++){
         await wait(0.01);
         
-        backrandomheight[i]= backrandomheight[i] - 0.3;
+        backrandomheight[i]= backrandomheight[i] - 3;
+        console.log(i + ':' + backrandomwidth[i] + ';' + backrandomheight[i] )
         //console.log(l + '-' + i + ':::' + backrandomheight[i] + ':::' + backrandomwidth[i])
         backelement[i].style.left = backrandomwidth[i] + 'px';
         backelement[i].style.top = backrandomheight[i] + 'px';
